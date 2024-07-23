@@ -1,0 +1,96 @@
+/* Styles for the main container */
+.alldatalist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Styles for the title */
+.alldatalist h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Styles for the table container */
+.Alldatamid {
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto; /* Allows horizontal scrolling for large tables */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Styles for the buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+.deletbtn{
+    background-color: #dc3545;
+}
+
+.updatebtn {
+    background-color: #007bff;
+}
+
+.insertbtn {
+    background-color: #28a745;
+}
+
+
+@media (max-width: 768px) {
+    .Alldatamid {
+        padding: 10px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
